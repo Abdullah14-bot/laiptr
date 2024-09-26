@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>استبيان تحديد الاحتياجات التدريبية</header>
+        <form id="myForm" class="form">
+            <h3 class="hh4">البيانات الاساسية</h3>
+            <div class="column">
+                <div class="input-box">
+                    <input type="number" name="ne" placeholder="الرقم الوظيفي" required />
+                </div>
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="الاسم " required />
+                </div>
+                <div class="input-box">
+                    <input type="text" name="Management" placeholder="الادارة" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <input type="text" name="Section" placeholder="القســم" required />
+                </div>
+                <div class="input-box">
+                    <input type="text" name="DirectManager" placeholder="المدير المباشر " required />
+                </div>
+            </div>
+
+            <h3 class="hh3">القسم الأول: تحديد الاحتياجات التدريبية العامة</h3>
+            <table>
+                <tr>
+                    <th>البند</th>
+                    <th>نعم</th>
+                    <th>لا</th>
+                    <th>ملاحظات</th>
+                </tr>
+                <tr>
+                    <td>هل تعتقد أنك بحاجة إلى تدريب إضافي للقيام بمهامك الحالية بفعالية؟</td>
+                    <td><input type="radio" name="question1" value="yes"></td>
+                    <td><input type="radio" name="question1" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question1"></td>
+                </tr>
+                <tr>
+                    <td>هل تلقيت أي تدريب متعلق بعملك خلال السنة الماضية؟</td>
+                    <td><input type="radio" name="question2" value="yes"></td>
+                    <td><input type="radio" name="question2" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question2"></td>
+                </tr>
+                <tr>
+                    <td>هل هناك أي مهارات جديدة تحتاج لتعلمها في الفترة القادمة؟</td>
+                    <td><input type="radio" name="question3" value="yes"></td>
+                    <td><input type="radio" name="question3" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question3"></td>
+                </tr>
+                <tr>
+                    <td>هل تواجه صعوبة في استخدام الأدوات أو البرامج التي تتطلبها وظيفتك؟</td>
+                    <td><input type="radio" name="question4" value="yes"></td>
+                    <td><input type="radio" name="question4" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question4"></td>
+                </tr>
+                <tr>
+                    <td>هل تعتقد بأن هناك مجالات يمكن تحسينها في أداء عملك؟</td>
+                    <td><input type="radio" name="question5" value="yes"></td>
+                    <td><input type="radio" name="question5" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question5"></td>
+                </tr>
+                <tr>
+                    <td>هل تحتاج إلى تدريب في مجال تطوير المهارات الشخصية (مثل الاتصال، إدارة الوقت)؟</td>
+                    <td><input type="radio" name="question6" value="yes"></td>
+                    <td><input type="radio" name="question6" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question6"></td>
+                </tr>
+                <tr>
+                    <td>هل تشعر بأن التدريب الذي تلقيته سابقاً كان مفيداً؟</td>
+                    <td><input type="radio" name="question7" value="yes"></td>
+                    <td><input type="radio" name="question7" value="no"></td>
+                    <td><input class="inputbox" type="text" name="question7"></td>
+                </tr>
+            </table>
+            <h3 class="hh3">القسم الثاني : مجالات التدريب المطلوبة</h3>
+
+            <table>
+                <tr>
+                    <th>المجال</th>
+                    <th>لا حاجة</th>
+                    <th>حاجة ضعيفة</th>
+                    <th>حاجة متوسطة</th>
+                    <th>حاجة كبيرة</th>
+                    <th>ملاحظات</th>
+                </tr>
+                <tr>
+                    <td> 1. التدريب على المهارات الفنية والتقنية</td>
+                    <td><input type="radio" name="question8" value="لا حاجة"></td>
+                    <td><input type="radio" name="question8" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question8" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question8" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question8" ></td>
+                </tr>
+                <tr>
+                    <td>2. التدريب على استخدام برامج الحاسوب</td>
+                    <td><input type="radio" name="question9" value="لا حاجة"></td>
+                    <td><input type="radio" name="question9" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question9" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question9" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question9" ></td>
+                </tr>
+                <tr>
+                    <td>3. التدريب على المهارات الإدارية</td>
+                    <td><input type="radio" name="question10" value="لا حاجة"></td>
+                    <td><input type="radio" name="question10" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question10" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question10" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question10" ></td>
+                </tr>
+                <tr>
+                    <td>4. التدريب على القيادة والإشراف</td>
+                    <td><input type="radio" name="question11" value="لا حاجة"></td>
+                    <td><input type="radio" name="question11" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question11" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question11" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question11" ></td>
+                </tr>
+                <tr>
+                    <td> 5. التدريب على خدمة العملاء</td>
+                    <td><input type="radio" name="question12" value="لا حاجة"></td>
+                    <td><input type="radio" name="question12" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question12" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question12" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question12" ></td>
+                </tr>
+                <tr>
+                    <td>6. التدريب على حل المشكلات واتخاذ القرارات</td>
+                    <td><input type="radio" name="question13" value="لا حاجة"></td>
+                    <td><input type="radio" name="question13" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question13" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question13" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question13" ></td>
+                </tr>
+                <tr>
+                    <td> 7. التدريب على إدارة المشاريع</td>
+                    <td><input type="radio" name="question14" value="لا حاجة"></td>
+                    <td><input type="radio" name="question14" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question14" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question14" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question14" ></td>
+                </tr>
+                <tr>
+                    <td>8. التدريب على إدارة الوقت وتنظيم المهام</td>
+                    <td><input type="radio" name="question15" value="لا حاجة"></td>
+                    <td><input type="radio" name="question15" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question15" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question15" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question15" ></td>
+                </tr>
+                <tr>
+                    <td>9. التدريب على المهارات الشخصية (مثل الاتصال والتفاوض)</td>
+                    <td><input type="radio" name="question16" value="لا حاجة"></td>
+                    <td><input type="radio" name="question16" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question16" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question16" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question16" ></td>
+                </tr>
+                <tr>
+                    <td>10. التدريب على الأمن والسلامة في العمل</td>
+                    <td><input type="radio" name="question17" value="لا حاجة"></td>
+                    <td><input type="radio" name="question17" value="حاجة ضعيفة "></td>
+                    <td><input type="radio" name="question17" value="حاجة متوسطة"></td>
+                    <td><input type="radio" name="question17" value="حاجة كبيرة "></td>
+                    <td><input class="inputbox" type="text" name="question17" ></td>
+                </tr>
+            </table>
+                <h3 class="hh3">القسم الثالث : الأسئلة المفتوحة</h3>
+                <tr>
+                    <td>ما هي المجالات أو المهارات التي تشعر أنك بحاجة لتطويرها في وظيفتك؟</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="inputbox" type="text" name="question18" placeholder="اكتب اسم البرنامج التدريبي هنا">
+                    </td>
+                </tr>
+                <tr>
+                    <td>هل هناك أي تحديات تواجهها في أداء مهامك اليومية وتشعر بأن التدريب يمكن أن يساعد في حلها ؟</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="inputbox" type="text" name="question19" placeholder="اكتب اسم البرنامج التدريبي هنا">
+                    </td>
+                </tr>
+                <tr>
+                    <td>ما اسم البرنامج التدريبي الذي تعتقد أنه سيكون الأكثر فائدة لك في المستقبل القريب؟ ( داخلي - خارجي )</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="inputbox" type="text" name="question20" placeholder="اكتب اسم البرنامج التدريبي هنا">
+                    </td>
+                </tr>
+                <tr>
+                    <td>هل هناك أي اقتراحات أخرى لتحسين برامج التدريب في الشركة؟</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="inputbox" type="text" name="question21" placeholder="اكتب اسم البرنامج التدريبي هنا">
+                    </td>
+                </tr>
+
+            <button type="submit">Submit</button>
+            <p id="message"></p> <!-- رسالة تأكيد بعد الإرسال -->
+        </form>
+    </section>
+
+    <style>
+        /* Import Google font - Poppins */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        body {
+            direction: rtl;
+            text-align: right;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: url('https://www12.0zz0.com/2024/09/26/08/962192616.jpg') no-repeat center center fixed;
+            background-size: cover;
+            
+        }
+        .hh3 {
+            margin-top: 20px;  /* مسافة بين العنوان وأعلى المحتوى */
+            margin-bottom: 20px; /* مسافة أسفل العنوان */
+        }
+        .container {
+            margin: 30px auto;
+            position: relative;
+            max-width: 700px;
+            width: 80%;
+            background: #ffffff9f;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(241, 238, 238, 0.438);
+        }
+
+        .container header {
+            font-size: 1.5rem;
+            color: #080808;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .container .form {
+            margin-top: 30px;
+        }
+
+        .form .input-box {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .input-box input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            font-size: 1rem;
+            color: #1a1717;
+            margin-top: 8px;
+            border: 1px solid #af949452;
+            border-radius: 6px;
+            padding: 0 15px;
+        }
+
+        .input-box input:focus {
+            box-shadow: 0 1px 0 rgba(7, 7, 7, 0.1);
+        }
+
+        .form .column {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        .form button {
+            height: 55px;
+            width: 100%;
+            color: #f7f7f7;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: rgb(7, 132, 204);
+        }
+
+        .form button:hover {
+            background: rgb(88, 56, 250);
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,td {
+            padding: 8px;
+            border: 1px solid #a7a8ec;
+            text-align: center;
+        }
+
+        th {
+            background-color: #85a2fa;
+        }
+
+        textarea {
+            width: 95%;
+            height: 50px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .form .column {
+                flex-direction: column;
+                row-gap: 15px;
+            }
+        }
+        .inputbox{
+         height: 50px; width: 100%;
+        }
+        
+    </style>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // منع الإرسال الافتراضي للنموذج
+
+        var formData = new FormData(this);
+
+        fetch("https://script.google.com/macros/s/AKfycbytzJcLN6dVJ3idGuzlWRdPDykhnoo6DE9H_Ir8g0UGUHZVYV6Vix94Fc3YM_cGHqeL/exec", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("message").innerText = "تم الإرسال بنجاح!"; // عرض رسالة التأكيد
+            document.getElementById("myForm").reset(); // تفريغ الحقول
+        })
+        .catch(error => {
+            document.getElementById("message").innerText = "حدث خطأ أثناء الإرسال.";
+        });
+    });
+</script>
+</body>
+
+</html>
