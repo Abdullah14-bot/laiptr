@@ -35,7 +35,20 @@
                     <input type="text" name="name" placeholder="الاسم " required />
                 </div>
                 <div class="input-box">
-                    <input type="text" name="Management" placeholder="الادارة" required />
+                    <select id="Management" name="Management" required >
+                        <option value="" disabled selected hidden>الادارة</option>
+                        <option value="ادارة الموارد البشرية والشؤون الإدارية">ادارة الموارد البشرية والشؤون الإدارية</option>
+                        <option value="الإدارة القانونية">الإدارة القانونية</option>
+                        <option value="التخطيط الاستراتجي">التخطيط الاستراتجي</option>
+                        <option value="إدارة الاستثمار ">إدارة الاستثمار </option>
+                        <option value="إدارة الشؤون المالية">إدارة الشؤون المالية</option>
+                        <option value="إدارة المخاطر">إدارة المخاطر</option>
+                        <option value="إدارة المراجعة الداخلية">إدارة المراجعة الداخلية</option>
+                        <option value="إدارة المساهمات والتقييم ">إدارة المساهمات والتقييم </option>
+                        <option value="إدارة تقنية المعلومات">إدارة تقنية المعلومات</option>
+                        <option value="مشروع النعام">مشروع النعام</option>
+                        <option value="مكتب المدير العام">مكتب المدير العام</option>
+                    </select>
                 </div>
             </div>
             <div class="column">
@@ -222,6 +235,15 @@ button{
     transition: all 0.2s ease;
     background: rgb(7, 132, 204);
 }
+
+input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
 section.container header {
     font-family: 'Arial', sans-serif;
