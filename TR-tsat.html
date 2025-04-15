@@ -16,6 +16,7 @@
             <h2>تعليمات</h2>
             <p>يرجى قراءة التعليمات التالية بعناية قبل البدء في تعبئة النموذج:</p>
             <ul>
+                <li>الإحتيجات التدريبية لهذه السنة ( يتم وضعها بالتنسيق مع مدير الإدارة ).</li>
                 <li>تأكد من ملء جميع الحقول المطلوبة بدقة.</li>
                 <li>تحديد المهام ذات الأولوية والمراد تطوير مهارات الموظف بها لغرض تحسين أدائه.</li>
                 <li>تحديد المستوى المستهدف في حال وجود مستويات للتدريب المرغوب.</li>
@@ -191,7 +192,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>الإحتيجات التدريبية لهذه السنة ( يتم وضعها بالتنسيق مع مدير الإدارة )</td>
+                    <td>ما اسم البرنامج التدريبي الذي تعتقد أنه سيكون الأكثر فائدة لك في المستقبل القريب؟ ( داخلي - خارجي )</td>
                 </tr>
                 <tr>
                     <td>
@@ -207,7 +208,7 @@
                     </td>
                 </tr>
 
-            <button type="submit">إرسال</button>
+            <button type="submit">طباعة</button>
             <p id="message"></p> <!-- رسالة تأكيد بعد الإرسال -->
         </form>
     </section>
@@ -402,21 +403,22 @@ ul li {
 </style>
 
 <script>
-     function showNextSection(sectionIndex) {
-            // إخفاء جميع الأقسام
-            document.querySelectorAll('.form-section').forEach((section) => {
-                section.classList.remove('active');
-                section.style.display = 'none';
-            });
+    function showNextSection(sectionIndex) {
+        // إخفاء جميع الأقسام
+        document.querySelectorAll('.form-section').forEach((section) => {
+            section.classList.remove('active');
+            section.style.display = 'none';
+        });
 
-            // إظهار القسم المطلوب
-            if (sectionIndex === 0) {
-                document.getElementById('page0').style.display = 'block';
-            } else {
-                document.getElementById('myForm').style.display = 'block';
-                document.getElementById('myForm').classList.add('active');
-            }
+        // إظهار القسم المطلوب
+        if (sectionIndex === 0) {
+            document.getElementById('page0').style.display = 'block';
+        } else {
+            document.getElementById('myForm').style.display = 'block';
+            document.getElementById('myForm').classList.add('active');
         }
+    }
+
     document.getElementById("myForm").addEventListener("submit", function (e) {
         e.preventDefault(); // منع الإرسال الافتراضي للنموذج
 
@@ -428,14 +430,16 @@ ul li {
         })
         .then(response => response.text())
         .then(data => {
-            document.getElementById("message").innerText = "تم الإرسال بنجاح!"; // عرض رسالة التأكيد
-            document.getElementById("myForm").reset(); // تفريغ الحقول
+            document.getElementById("message").innerText = "الاعتماد من قبل مدير الإدارة (.................................)";
+            window.print(); // 🖨️ طباعة النموذج
+            document.getElementById("myForm").reset();
         })
         .catch(error => {
             document.getElementById("message").innerText = "حدث خطأ أثناء الإرسال.";
         });
     });
 </script>
+
 </body>
 
 </html>
